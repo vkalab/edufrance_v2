@@ -1,0 +1,70 @@
+name: edufrance_v1
+description: EduFrance
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  audioplayers: ^0.20.1
+
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  flutter_native_splash: ^2.2.9
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.9.2
+
+
+  flutter_lints: ^2.0.0
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/icon.png
+  android_12:
+    image: assets/icon.png
+
+
+flutter:
+
+
+  uses-material-design: true
+  assets:
+    - assets/font/
+    - assets/graphics/barevne1.png
+    - assets/graphics/l2_1.png
+    - assets/audio/
+    - assets/sounds/lekce1.mp3
+    - assets/lekce1.mp3
+
+
+
+
+
+
+  fonts:
+      - family: Font1
+        fonts:
+          - asset: assets/font/font1.otf
+      - family: Font2
+        fonts:
+          - asset: assets/font/font2.ttf
+
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: assets/graphics/barevne1.png
